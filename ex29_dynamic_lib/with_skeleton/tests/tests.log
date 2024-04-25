@@ -1,0 +1,4 @@
+[ERROR] (tests/ex29_tests.c:29: errno: None) Function fail_on_purpose return 1 for data: i fail
+[ERROR] (tests/ex29_tests.c:13: errno: None) USAGE: ex29 libex29.so function data
+[ERROR] (tests/ex29_tests.c:24: errno: None) Did not find adfasfasdf function in the library ./build/libYOUR_LIBRARY.so: ./build/libYOUR_LIBRARY.so: undefined symbol: adfasfasdf
+[ERROR] (tests/ex29_tests.c:20: errno: No such file or directory) Failed to open the library ./build/libx.so: ./build/libx.so: cannot open shared object file: No such file or directory

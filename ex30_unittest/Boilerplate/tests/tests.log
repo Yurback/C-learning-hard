@@ -1,0 +1,9 @@
+DEBUG tests/ex30_tests.c:34: ------ RUNNING: ./tests/ex30_tests
+DEBUG tests/ex30_tests.c:26: 
+------- test_dlopen
+DEBUG tests/ex30_tests.c:27: 
+------- test_functions
+DEBUG tests/ex30_tests.c:28: 
+------- test_failures
+DEBUG tests/ex30_tests.c:29: 
+------- test_dlclose

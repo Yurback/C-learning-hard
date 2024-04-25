@@ -68,7 +68,8 @@ int main(int argc, char *argv[])
 		UPTO(pgl->gl_pathc)
 		free(arrfinf[i]);
 		free(arrfinf);
-
+		
+		// Next iteration for nested folders
 		strcat(strman, "/*");
 	}
 	printf("In total %d:\n", cnt);
