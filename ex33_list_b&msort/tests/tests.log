@@ -1,0 +1,56 @@
+DEBUG tests/list_algos_tests.c:90: ------ RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:84: 
+------- test_bubble_sort
+DEBUG src/lcthw/list.c:131: Node 1 : Value B
+
+DEBUG src/lcthw/list.c:131: Node 2 : Value D
+
+DEBUG src/lcthw/list.c:131: Node 3 : Value C
+
+DEBUG src/lcthw/list.c:131: Node 4 : Value b
+
+DEBUG src/lcthw/list.c:131: Node 5 : Value a
+
+DEBUG src/lcthw/list.c:131: Node 1 : Value B
+
+DEBUG src/lcthw/list.c:131: Node 2 : Value C
+
+DEBUG src/lcthw/list.c:131: Node 3 : Value D
+
+DEBUG src/lcthw/list.c:131: Node 4 : Value a
+
+DEBUG src/lcthw/list.c:131: Node 5 : Value b
+
+DEBUG src/lcthw/list.c:131: Node 1 : Value B
+
+DEBUG src/lcthw/list.c:131: Node 2 : Value C
+
+DEBUG src/lcthw/list.c:131: Node 3 : Value D
+
+DEBUG src/lcthw/list.c:131: Node 4 : Value a
+
+DEBUG src/lcthw/list.c:131: Node 5 : Value b
+
+DEBUG tests/list_tests.c:114: ------ RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:102: 
+------- test_create
+DEBUG tests/list_tests.c:103: 
+------- test_push_pop
+DEBUG tests/list_tests.c:104: 
+------- test_display
+DEBUG tests/list_tests.c:105: 
+------- test_unshift
+DEBUG tests/list_tests.c:106: 
+------- test_display
+DEBUG src/lcthw/list.c:131: Node 1 : Value test3 data
+
+DEBUG src/lcthw/list.c:131: Node 2 : Value test2 data
+
+DEBUG src/lcthw/list.c:131: Node 3 : Value test1 data
+
+DEBUG tests/list_tests.c:107: 
+------- test_remove
+DEBUG tests/list_tests.c:108: 
+------- test_shift
+DEBUG tests/list_tests.c:109: 
+------- test_destroy
