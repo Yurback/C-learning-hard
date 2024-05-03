@@ -1,0 +1,317 @@
+DEBUG tests/darray_algos_tests.c:77: ------ RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_algos_tests.c:71: 
+------- test_qsort
+DEBUG tests/darray_algos_tests.c:45: --- Testing qsort sorting algorithm
+DEBUG tests/darray_tests.c:139: ------ RUNNING: ./tests/darray_tests
+DEBUG tests/darray_tests.c:127: 
+------- test_create
+DEBUG tests/darray_tests.c:128: 
+------- test_new
+DEBUG tests/darray_tests.c:129: 
+------- test_set
+DEBUG tests/darray_tests.c:130: 
+------- test_get
+DEBUG tests/darray_tests.c:131: 
+------- test_remove
+DEBUG tests/darray_tests.c:132: 
+------- test_expand_contract
+DEBUG tests/darray_tests.c:133: 
+------- test_push_pop
+DEBUG tests/darray_tests.c:134: 
+------- test_destroy
+DEBUG tests/list_algos_tests.c:289: ------ RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:283: 
+------- test_bubble_sort
+DEBUG src/lcthw/list.c:150: Node 1 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 3
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 1 : Value 3
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 1 : Value 3
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 9
+
+[ERROR] (src/lcthw/list.c:141: errno: None) List is empty.
+DEBUG src/lcthw/list.c:150: Node 1 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 3
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 1 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 3
+
+DEBUG src/lcthw/list.c:150: Node 1 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 3
+
+[ERROR] (src/lcthw/list.c:141: errno: None) List is empty.
+DEBUG src/lcthw/list.c:163: Node 1 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 150
+
+[ERROR] (src/lcthw/list.c:141: errno: None) List is empty.
+DEBUG src/lcthw/list.c:163: Node 1 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 10
+
+[ERROR] (src/lcthw/list.c:141: errno: None) List is empty.
+DEBUG tests/list_algos_tests.c:284: 
+------- test_merge_sort
+DEBUG src/lcthw/list.c:150: Node 1 : Value 3
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 1 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 3
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 10
+
+DEBUG tests/list_tests.c:114: ------ RUNNING: ./tests/list_tests
+DEBUG tests/list_tests.c:102: 
+------- test_create
+DEBUG tests/list_tests.c:103: 
+------- test_push_pop
+DEBUG tests/list_tests.c:104: 
+------- test_display
+[ERROR] (src/lcthw/list.c:141: errno: None) List is empty.
+DEBUG tests/list_tests.c:105: 
+------- test_unshift
+DEBUG tests/list_tests.c:106: 
+------- test_display
+DEBUG src/lcthw/list.c:150: Node 1 : Value test3 data
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value test2 data
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value test1 data
+
+DEBUG tests/list_tests.c:107: 
+------- test_remove
+DEBUG tests/list_tests.c:108: 
+------- test_shift
+DEBUG tests/list_tests.c:109: 
+------- test_destroy
+DEBUG tests/radixmap_tests.c:119: ------ RUNNING: ./tests/radixmap_tests
+DEBUG tests/radixmap_tests.c:114: 
+------- test_operations
+DEBUG tests/radixmap_tests.c:61: Key:3197070882 value: 0
+DEBUG tests/radixmap_tests.c:61: Key:3219851305 value: 63
+DEBUG tests/radixmap_tests.c:61: Key:3220699654 value: 96
+DEBUG tests/radixmap_tests.c:61: Key:3220858797 value: 70
+DEBUG tests/radixmap_tests.c:61: Key:3220910566 value: 89
+DEBUG tests/radixmap_tests.c:61: Key:3221166940 value: 160
+DEBUG tests/radixmap_tests.c:61: Key:3221200263 value: 129
+DEBUG tests/radixmap_tests.c:61: Key:3221200806 value: 113
+DEBUG tests/radixmap_tests.c:61: Key:3343756749 value: 152
+DEBUG tests/radixmap_tests.c:61: Key:3347519282 value: 52
+DEBUG tests/radixmap_tests.c:61: Key:3415631729 value: 105
+DEBUG tests/radixmap_tests.c:61: Key:3481100757 value: 116
+DEBUG tests/radixmap_tests.c:61: Key:3481267273 value: 192
+DEBUG tests/radixmap_tests.c:61: Key:3484148408 value: 189
+DEBUG tests/radixmap_tests.c:61: Key:3523181042 value: 24
+DEBUG tests/radixmap_tests.c:61: Key:3555686258 value: 166
+DEBUG tests/radixmap_tests.c:61: Key:3567024883 value: 130
+DEBUG tests/radixmap_tests.c:61: Key:3586051791 value: 33
+DEBUG tests/radixmap_tests.c:61: Key:3605511632 value: 111
+DEBUG tests/radixmap_tests.c:61: Key:3606260963 value: 139
+DEBUG tests/radixmap_tests.c:61: Key:3615162516 value: 118
+DEBUG tests/radixmap_tests.c:61: Key:3656369109 value: 155
+DEBUG tests/radixmap_tests.c:61: Key:3681274254 value: 53
+DEBUG tests/radixmap_tests.c:61: Key:3682588469 value: 67
+DEBUG tests/radixmap_tests.c:61: Key:3706297766 value: 131
+DEBUG tests/radixmap_tests.c:61: Key:3724014416 value: 1
+DEBUG tests/radixmap_tests.c:61: Key:3744861303 value: 154
+DEBUG tests/radixmap_tests.c:61: Key:3752797855 value: 34
+DEBUG tests/radixmap_tests.c:61: Key:3754886989 value: 48
+DEBUG tests/radixmap_tests.c:61: Key:3757914756 value: 119
+DEBUG tests/radixmap_tests.c:61: Key:3757978408 value: 149
+DEBUG tests/radixmap_tests.c:61: Key:3758029106 value: 47
+DEBUG tests/radixmap_tests.c:61: Key:3758048816 value: 108
+DEBUG tests/radixmap_tests.c:61: Key:3758080669 value: 125
+DEBUG tests/radixmap_tests.c:61: Key:3783196995 value: 20
+DEBUG tests/radixmap_tests.c:61: Key:3825107480 value: 38
+DEBUG tests/radixmap_tests.c:61: Key:3866021257 value: 12
+DEBUG tests/radixmap_tests.c:61: Key:3891174408 value: 101
+DEBUG tests/radixmap_tests.c:61: Key:3891964413 value: 54
+DEBUG tests/radixmap_tests.c:61: Key:3933581681 value: 17
+DEBUG tests/radixmap_tests.c:61: Key:3952548627 value: 183
+DEBUG tests/radixmap_tests.c:61: Key:3958781380 value: 120
+DEBUG tests/radixmap_tests.c:61: Key:3987688943 value: 195
+DEBUG tests/radixmap_tests.c:61: Key:3992445949 value: 188
+DEBUG tests/radixmap_tests.c:61: Key:4009737533 value: 84
+DEBUG tests/radixmap_tests.c:61: Key:4017590430 value: 62
+DEBUG tests/radixmap_tests.c:61: Key:4018089270 value: 141
+DEBUG tests/radixmap_tests.c:61: Key:4023698420 value: 140
+DEBUG tests/radixmap_tests.c:61: Key:4043280038 value: 42
+DEBUG tests/radixmap_tests.c:61: Key:4047436975 value: 90
+DEBUG tests/radixmap_tests.c:61: Key:4059137619 value: 128
+DEBUG tests/radixmap_tests.c:61: Key:4076822077 value: 150
+DEBUG tests/radixmap_tests.c:61: Key:4091486458 value: 127
+DEBUG tests/radixmap_tests.c:61: Key:4093341211 value: 14
+DEBUG tests/radixmap_tests.c:61: Key:4125586144 value: 148
+DEBUG tests/radixmap_tests.c:61: Key:4149713682 value: 121
+DEBUG tests/radixmap_tests.c:61: Key:4151006671 value: 51
+DEBUG tests/radixmap_tests.c:61: Key:4159945910 value: 191
+DEBUG tests/radixmap_tests.c:61: Key:4160325354 value: 41
+DEBUG tests/radixmap_tests.c:61: Key:4160515873 value: 194
+DEBUG tests/radixmap_tests.c:61: Key:4160706228 value: 169
+DEBUG tests/radixmap_tests.c:61: Key:4160708715 value: 94
+DEBUG tests/radixmap_tests.c:61: Key:4175945145 value: 107
+DEBUG tests/radixmap_tests.c:61: Key:4184825494 value: 133
+DEBUG tests/radixmap_tests.c:61: Key:4194165591 value: 197
+DEBUG tests/radixmap_tests.c:61: Key:4194254652 value: 158
+DEBUG tests/radixmap_tests.c:61: Key:4194278640 value: 16
+DEBUG tests/radixmap_tests.c:61: Key:4201193609 value: 46
+DEBUG tests/radixmap_tests.c:61: Key:4209984656 value: 25
+DEBUG tests/radixmap_tests.c:61: Key:4217058921 value: 193
+DEBUG tests/radixmap_tests.c:61: Key:4225608409 value: 117
+DEBUG tests/radixmap_tests.c:61: Key:4227232701 value: 23
+DEBUG tests/radixmap_tests.c:61: Key:4227270657 value: 73
+DEBUG tests/radixmap_tests.c:61: Key:4236238713 value: 126
+DEBUG tests/radixmap_tests.c:61: Key:4255733456 value: 8
+DEBUG tests/radixmap_tests.c:61: Key:4257612674 value: 164
+DEBUG tests/radixmap_tests.c:61: Key:4260826005 value: 172
+DEBUG tests/radixmap_tests.c:61: Key:4264528977 value: 186
+DEBUG tests/radixmap_tests.c:61: Key:4266589532 value: 39
+DEBUG tests/radixmap_tests.c:61: Key:4269688594 value: 6
+DEBUG tests/radixmap_tests.c:61: Key:4273978763 value: 15
+DEBUG tests/radixmap_tests.c:61: Key:4281321106 value: 156
+DEBUG tests/radixmap_tests.c:61: Key:4281730995 value: 60
+DEBUG tests/radixmap_tests.c:61: Key:4282244782 value: 174
+DEBUG tests/radixmap_tests.c:61: Key:4282357983 value: 175
+DEBUG tests/radixmap_tests.c:61: Key:4283729150 value: 143
+DEBUG tests/radixmap_tests.c:61: Key:4288518707 value: 179
+DEBUG tests/radixmap_tests.c:61: Key:4290497768 value: 58
+DEBUG tests/radixmap_tests.c:61: Key:4290739810 value: 180
+DEBUG tests/radixmap_tests.c:61: Key:4291281158 value: 43
+DEBUG tests/radixmap_tests.c:61: Key:4291815513 value: 151
+DEBUG tests/radixmap_tests.c:61: Key:4292042486 value: 45
+DEBUG tests/radixmap_tests.c:61: Key:4292545679 value: 109
+DEBUG tests/radixmap_tests.c:61: Key:4293732798 value: 27
+DEBUG tests/radixmap_tests.c:61: Key:4294407122 value: 187
+DEBUG tests/radixmap_tests.c:61: Key:4294603173 value: 198
+DEBUG tests/radixmap_tests.c:61: Key:4294689083 value: 18
+DEBUG tests/radixmap_tests.c:61: Key:4294775892 value: 181
+DEBUG tests/radixmap_tests.c:61: Key:4294791420 value: 29
+DEBUG tests/radixmap_tests.c:61: Key:4294844378 value: 134

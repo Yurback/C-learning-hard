@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "type_traits": "c",
+    "minunit.h": "c",
+    "stdlib.h": "c"
+  }
+}

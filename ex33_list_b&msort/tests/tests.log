@@ -1,35 +1,171 @@
-DEBUG tests/list_algos_tests.c:90: ------ RUNNING: ./tests/list_algos_tests
-DEBUG tests/list_algos_tests.c:84: 
+DEBUG tests/list_algos_tests.c:289: ------ RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_algos_tests.c:283: 
 ------- test_bubble_sort
-DEBUG src/lcthw/list.c:131: Node 1 : Value B
+DEBUG src/lcthw/list.c:150: Node 1 : Value 9
 
-DEBUG src/lcthw/list.c:131: Node 2 : Value D
+DEBUG src/lcthw/list.c:150: Node 2 : Value 5
 
-DEBUG src/lcthw/list.c:131: Node 3 : Value C
+DEBUG src/lcthw/list.c:150: Node 3 : Value 3
 
-DEBUG src/lcthw/list.c:131: Node 4 : Value b
+DEBUG src/lcthw/list.c:150: Node 4 : Value 88
 
-DEBUG src/lcthw/list.c:131: Node 5 : Value a
+DEBUG src/lcthw/list.c:150: Node 5 : Value 4
 
-DEBUG src/lcthw/list.c:131: Node 1 : Value B
+DEBUG src/lcthw/list.c:150: Node 1 : Value 3
 
-DEBUG src/lcthw/list.c:131: Node 2 : Value C
+DEBUG src/lcthw/list.c:150: Node 2 : Value 4
 
-DEBUG src/lcthw/list.c:131: Node 3 : Value D
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
 
-DEBUG src/lcthw/list.c:131: Node 4 : Value a
+DEBUG src/lcthw/list.c:150: Node 4 : Value 88
 
-DEBUG src/lcthw/list.c:131: Node 5 : Value b
+DEBUG src/lcthw/list.c:150: Node 5 : Value 9
 
-DEBUG src/lcthw/list.c:131: Node 1 : Value B
+DEBUG src/lcthw/list.c:150: Node 1 : Value 3
 
-DEBUG src/lcthw/list.c:131: Node 2 : Value C
+DEBUG src/lcthw/list.c:150: Node 2 : Value 4
 
-DEBUG src/lcthw/list.c:131: Node 3 : Value D
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
 
-DEBUG src/lcthw/list.c:131: Node 4 : Value a
+DEBUG src/lcthw/list.c:150: Node 4 : Value 88
 
-DEBUG src/lcthw/list.c:131: Node 5 : Value b
+DEBUG src/lcthw/list.c:150: Node 5 : Value 9
+
+[ERROR] (src/lcthw/list.c:141: errno: None) List is empty.
+DEBUG src/lcthw/list.c:150: Node 1 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 3
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 1 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 3
+
+DEBUG src/lcthw/list.c:150: Node 1 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 3
+
+[ERROR] (src/lcthw/list.c:141: errno: None) List is empty.
+DEBUG src/lcthw/list.c:163: Node 1 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 150
+
+[ERROR] (src/lcthw/list.c:141: errno: None) List is empty.
+DEBUG src/lcthw/list.c:163: Node 1 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 10
+
+[ERROR] (src/lcthw/list.c:141: errno: None) List is empty.
+DEBUG tests/list_algos_tests.c:284: 
+------- test_merge_sort
+DEBUG src/lcthw/list.c:150: Node 1 : Value 3
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 1 : Value 9
+
+DEBUG src/lcthw/list.c:150: Node 2 : Value 88
+
+DEBUG src/lcthw/list.c:150: Node 3 : Value 5
+
+DEBUG src/lcthw/list.c:150: Node 4 : Value 4
+
+DEBUG src/lcthw/list.c:150: Node 5 : Value 3
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 1 : Value 150
+
+DEBUG src/lcthw/list.c:163: Node 2 : Value 75
+
+DEBUG src/lcthw/list.c:163: Node 3 : Value 50
+
+DEBUG src/lcthw/list.c:163: Node 4 : Value 10
+
+DEBUG src/lcthw/list.c:163: Node 5 : Value 10
 
 DEBUG tests/list_tests.c:114: ------ RUNNING: ./tests/list_tests
 DEBUG tests/list_tests.c:102: 
@@ -38,15 +174,16 @@ DEBUG tests/list_tests.c:103:
 ------- test_push_pop
 DEBUG tests/list_tests.c:104: 
 ------- test_display
+[ERROR] (src/lcthw/list.c:141: errno: None) List is empty.
 DEBUG tests/list_tests.c:105: 
 ------- test_unshift
 DEBUG tests/list_tests.c:106: 
 ------- test_display
-DEBUG src/lcthw/list.c:131: Node 1 : Value test3 data
+DEBUG src/lcthw/list.c:150: Node 1 : Value test3 data
 
-DEBUG src/lcthw/list.c:131: Node 2 : Value test2 data
+DEBUG src/lcthw/list.c:150: Node 2 : Value test2 data
 
-DEBUG src/lcthw/list.c:131: Node 3 : Value test1 data
+DEBUG src/lcthw/list.c:150: Node 3 : Value test1 data
 
 DEBUG tests/list_tests.c:107: 
 ------- test_remove
