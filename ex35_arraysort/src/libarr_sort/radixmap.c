@@ -159,16 +159,25 @@ error:
     return -1;
 }
 
-int RadixMap_display(RadixMap *map)
+int RadixMap_display(RadixMap *map, char mode)
 {
-    printf("=============Radimax_info==============\n");
-
-    for (size_t i = 0; i < map->max; i++)
+    if (mode == 'a')
     {
-        printf("Element: %ld ; Key: %u ; Value : %u \n", i, map->contents[i].data.key, map->contents[i].data.value);
+        printf("=============Radimax_info==============\n");
+        UPTO((int)map->max)
+        {
+            printf("Element: %d ; Key: %u ; Value : %u \n", i, map->contents[i].data.key, map->contents[i].data.value);
+        }
+        printf("=======================================\n");
     }
-
-    printf("=======================================\n");
-
+    else
+    {
+        printf("=============Radimax_info==============\n");
+        UPTO((int)map->size)
+        {
+            printf("Element: %d ; Key: %u ; Value : %u \n", i, map->contents[i].data.key, map->contents[i].data.value);
+        }
+        printf("=======================================\n");
+    }
     return 0;
 }

@@ -130,3 +130,26 @@ void *DArray_pop(DArray *array)
 
 	return el;
 }
+
+int DArray_display(DArray *array, char mode)
+{
+	if (mode == 'a')
+	{
+		printf("=============DArray_info==============\n");
+		UPTO(array->max)
+		{
+			printf("Element: %d ; Value : %s \n", i, (char *)array->contents[i]);
+		}
+		printf("=======================================\n");
+	}
+	else
+	{
+		printf("=============DArray_info==============\n");
+		UPTO(array->size)
+		{
+			printf("Element: %d ; Value : %s \n", i, (char *)array->contents[i]);
+		}
+		printf("=======================================\n");
+	}
+	return 0;
+}

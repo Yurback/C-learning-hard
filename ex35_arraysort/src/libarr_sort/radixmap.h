@@ -33,6 +33,6 @@ int RadixMap_add(RadixMap *map, uint32_t key, uint32_t value);
 
 int RadixMap_delete(RadixMap *map, RMElement *el);
 
-int RadixMap_display(RadixMap *map);
+int RadixMap_display(RadixMap *map, char mode);
 
 #endif

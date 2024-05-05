@@ -2,6 +2,15 @@
   "files.associations": {
     "type_traits": "c",
     "minunit.h": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "array": "c",
+    "deque": "c",
+    "string": "c",
+    "unordered_map": "c",
+    "vector": "c",
+    "string_view": "c",
+    "initializer_list": "c",
+    "darray_algos.h": "c",
+    "darray.h": "c"
   }
 }

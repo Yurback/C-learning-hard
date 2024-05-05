@@ -31,6 +31,8 @@ void *DArray_pop(DArray *array);
 
 void DArray_clear_destroy(DArray *array);
 
+int DArray_display(DArray *array, char mode);
+
 #define DArray_last(A) ((A)->contents[(A)->size - 1])
 #define DArray_first(A) ((A)->contents[0])
 #define DArray_size(A) ((A)->size)
