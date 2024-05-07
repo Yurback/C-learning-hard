@@ -31,7 +31,7 @@ void *DArray_pop(DArray *array);
 
 void DArray_clear_destroy(DArray *array);
 
-int DArray_display(DArray *array, char mode);
+int DArray_display(DArray *array, char mode, char type);
 
 #define DArray_last(A) ((A)->contents[(A)->size - 1])
 #define DArray_first(A) ((A)->contents[0])
@@ -65,6 +65,17 @@ static inline void *DArray_remove(DArray *array, int i)
 	void *el = array->contents[i];
 	array->contents[i] = NULL;
 	return el;
+}
+
+static inline void *DArray_remove_free(DArray *array, int i)
+{
+	check(array->contents[i] != NULL, "Removed element should not be NULL");
+	void *el = array->contents[i];
+	free(el);
+	array->contents[i] = NULL;
+	return el;
+error:
+	return NULL;
 }
 
 static inline void *DArray_new(DArray *array)

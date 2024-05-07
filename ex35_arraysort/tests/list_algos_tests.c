@@ -126,18 +126,18 @@ char *test_bubble_sort()
 {
 	// _____________TEST STRING LIST VALUE ON ASCENDING ORDER_________________
 	List *words = create_words();
-	List_display(words, "str");
+	// List_display(words, "str");
 	// should work on a list that needs sorting
 
 	int rc = List_bubble_sort(words, (List_compare)strcmp);
 	mu_assert(rc == 0, "Bubble sort failed");
 	mu_assert(is_sorted(words, STR), "Words are not sorted after bubble sort.");
-	List_display(words, "str");
+	// List_display(words, "str");
 	// should work on an already sorted list
 	rc = List_bubble_sort(words, (List_compare)strcmp);
 	mu_assert(rc == 0, "Bubble sort of already sorted failed.");
 	mu_assert(is_sorted(words, STR), "Words should be sort if already bubble sorted");
-	List_display(words, "str");
+	// List_display(words, "str");
 	List_destroy(words);
 
 	// should work on an empty list
@@ -145,23 +145,23 @@ char *test_bubble_sort()
 	rc = List_bubble_sort(words, (List_compare)strcmp);
 	mu_assert(rc == 0, "Bubble sort failed on empty list.");
 	mu_assert(is_sorted(words, STR), "Words should be sorted if empty");
-	List_display(words, "str");
+	// List_display(words, "str");
 	List_destroy(words);
 
 	// _____________TEST STRING LIST VALUE ON DESCENDING OREDER_________________
 	words = create_words();
-	List_display(words, "str");
+	// List_display(words, "str");
 	// should work on a list that needs sorting
 
 	rc = List_bubble_sort(words, (List_compare)strcmp_rev);
 	mu_assert(rc == 0, "Bubble sort failed");
 	mu_assert(is_sorted_rev(words, STR), "Words are not sorted after bubble sort.");
-	List_display(words, "str");
+	// List_display(words, "str");
 	// should work on an already sorted list
 	rc = List_bubble_sort(words, (List_compare)strcmp_rev);
 	mu_assert(rc == 0, "Bubble sort of already sorted failed.");
 	mu_assert(is_sorted_rev(words, STR), "Words should be sort if already bubble sorted");
-	List_display(words, "str");
+	// List_display(words, "str");
 	List_destroy(words);
 
 	// should work on an empty list
@@ -169,24 +169,24 @@ char *test_bubble_sort()
 	rc = List_bubble_sort(words, (List_compare)strcmp_rev);
 	mu_assert(rc == 0, "Bubble sort failed on empty list.");
 	mu_assert(is_sorted_rev(words, STR), "Words should be sorted if empty");
-	List_display(words, "str");
+	// List_display(words, "str");
 	List_destroy(words);
 
 	// _____________TEST INTEGER LIST VALUE ON ASCENDING ORDER_________________
 	List *ints = create_int();
-	List_display(ints, "int");
+	// List_display(ints, "int");
 
 	// should work on a list that needs sorting
 
 	rc = List_bubble_sort(ints, (List_compare)intcmp);
 	mu_assert(rc == 0, "Bubble sort failed");
 	mu_assert(is_sorted(ints, INT), "Ints are not sorted after bubble sort.");
-	List_display(ints, "int");
+	// List_display(ints, "int");
 	// should work on an already sorted list
 	rc = List_bubble_sort(ints, (List_compare)intcmp);
 	mu_assert(rc == 0, "Bubble sort of already sorted failed.");
 	mu_assert(is_sorted(ints, INT), "Ints should be sort if already bubble sorted");
-	List_display(ints, "int");
+	// List_display(ints, "int");
 	List_destroy(ints);
 
 	// should work on an empty list
@@ -194,24 +194,24 @@ char *test_bubble_sort()
 	rc = List_bubble_sort(ints, (List_compare)intcmp);
 	mu_assert(rc == 0, "Bubble sort failed on empty list.");
 	mu_assert(is_sorted(ints, INT), "Ints should be sorted if empty");
-	List_display(ints, "int");
+	// List_display(ints, "int");
 	List_destroy(ints);
 
 	// _____________TEST INTEGER LIST VALUE ON DESCENDING ORDER_________________
 	ints = create_int();
-	List_display(ints, "int");
+	// List_display(ints, "int");
 
 	// should work on a list that needs sorting
 
 	rc = List_bubble_sort(ints, (List_compare)intcmp_rev);
 	mu_assert(rc == 0, "Bubble sort failed");
 	mu_assert(is_sorted_rev(ints, INT), "Ints are not sorted after bubble sort.");
-	List_display(ints, "int");
+	// List_display(ints, "int");
 	// should work on an already sorted list
 	rc = List_bubble_sort(ints, (List_compare)intcmp_rev);
 	mu_assert(rc == 0, "Bubble sort of already sorted failed.");
 	mu_assert(is_sorted_rev(ints, INT), "Ints should be sort if already bubble sorted");
-	List_display(ints, "int");
+	// List_display(ints, "int");
 	List_destroy(ints);
 
 	// should work on an empty list
@@ -219,7 +219,7 @@ char *test_bubble_sort()
 	rc = List_bubble_sort(ints, (List_compare)intcmp_rev);
 	mu_assert(rc == 0, "Bubble sort failed on empty list.");
 	mu_assert(is_sorted_rev(ints, INT), "Ints should be sorted if empty");
-	List_display(ints, "int");
+	// List_display(ints, "int");
 	List_destroy(ints);
 	return NULL;
 }
@@ -235,7 +235,7 @@ char *test_merge_sort()
 
 	List *res2 = List_merge_sort(res, (List_compare)strcmp);
 	mu_assert(is_sorted(res2, STR), "should still be sorted after merge sort");
-	List_display(words, "str");
+	// List_display(words, "str");
 	List_destroy(words);
 
 	// _____________TEST STRING LIST VALUE ON DESCENDING ORDER_________________
@@ -247,7 +247,7 @@ char *test_merge_sort()
 
 	res2 = List_merge_sort(res, (List_compare)strcmp_rev);
 	mu_assert(is_sorted_rev(res2, STR), "should still be sorted after merge sort");
-	List_display(words, "str");
+	// List_display(words, "str");
 	List_destroy(words);
 
 	// _____________TEST INTEGER LIST VALUE ON ASCENDING ORDER_________________
@@ -259,7 +259,7 @@ char *test_merge_sort()
 
 	res2 = List_merge_sort(res, (List_compare)intcmp);
 	mu_assert(is_sorted(res2, INT), "Integers still be sorted after merge sort");
-	List_display(ints, "int");
+	// List_display(ints, "int");
 	List_destroy(ints);
 
 	// _____________TEST INTEGER LIST VALUE ON DESCENDING ORDER_________________
@@ -271,7 +271,7 @@ char *test_merge_sort()
 
 	res2 = List_merge_sort(res, (List_compare)intcmp_rev);
 	mu_assert(is_sorted_rev(res2, INT), "Integers still be sorted after merge sort");
-	List_display(ints, "int");
+	// List_display(ints, "int");
 	List_destroy(ints);
 	return NULL;
 }

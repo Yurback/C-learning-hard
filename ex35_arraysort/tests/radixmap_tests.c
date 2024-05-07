@@ -13,8 +13,6 @@ static int make_random(RadixMap *map)
               key);
     }
 
-    RadixMap_display(map, 'a');
-
     return i;
 
 error:
@@ -100,16 +98,9 @@ test_operations()
         mu_assert(check_order(map),
                   "RadixMap didn't stay sorted after delete.");
     }
-    PRINT_ld(map->size);
-    PRINT_ld(map->max);
-    RadixMap_display(map, 'a');
 
     RadixMap_add(map, 350U, 1000U);
     RadixMap_add(map, 100U, 2000U);
-
-    PRINT_ld(map->size);
-    PRINT_ld(map->max);
-    RadixMap_display(map, 0);
 
     RadixMap_destroy(map);
 

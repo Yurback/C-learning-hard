@@ -53,8 +53,6 @@ char *run_sort_test(int (*func)(DArray *, DArray_compare),
     mu_assert(rc == 0, "sort failed");
     mu_assert(is_sorted(words), "didn't sort it");
 
-    DArray_display(words, 'e');
-
     DArray_destroy(words);
     return NULL;
 }

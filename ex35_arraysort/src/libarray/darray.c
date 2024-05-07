@@ -36,6 +36,7 @@ void DArray_clear(DArray *array)
 			if (array->contents[i] != NULL)
 			{
 				free(array->contents[i]);
+				array->contents[i] = NULL;
 			}
 		}
 	}
@@ -131,25 +132,49 @@ void *DArray_pop(DArray *array)
 	return el;
 }
 
-int DArray_display(DArray *array, char mode)
+int DArray_display(DArray *array, char mode, char type)
 {
-	if (mode == 'a')
+	if (type == 's')
 	{
-		printf("=============DArray_info==============\n");
-		UPTO(array->max)
+		if (mode == 'a')
 		{
-			printf("Element: %d ; Value : %s \n", i, (char *)array->contents[i]);
+			printf("=============DArray_info==============\n");
+			UPTO(array->max)
+			{
+				printf("Element: %d ; Value : %s \n", i, array->contents[i] ? (char *)array->contents[i] : "NULL");
+			}
+			printf("=======================================\n");
 		}
-		printf("=======================================\n");
+		else
+		{
+			printf("=============DArray_info==============\n");
+			UPTO(array->size)
+			{
+				printf("Element: %d ; Value : %s \n", i, array->contents[i] ? (char *)array->contents[i] : "NULL");
+			}
+			printf("=======================================\n");
+		}
 	}
-	else
+	else if (type == 'i')
 	{
-		printf("=============DArray_info==============\n");
-		UPTO(array->size)
+		if (mode == 'a')
 		{
-			printf("Element: %d ; Value : %s \n", i, (char *)array->contents[i]);
+			printf("=============DArray_info==============\n");
+			UPTO(array->max)
+			{
+				printf("Element: %d ; Value : %d \n", i, array->contents[i] ? *(int *)(array->contents[i]) : -1);
+			}
+			printf("=======================================\n");
 		}
-		printf("=======================================\n");
+		else
+		{
+			printf("=============DArray_info==============\n");
+			UPTO(array->size)
+			{
+				printf("Element: %d ; Value : %d \n", i, array->contents[i] ? *(int *)(array->contents[i]) : -1);
+			}
+			printf("=======================================\n");
+		}
 	}
 	return 0;
 }

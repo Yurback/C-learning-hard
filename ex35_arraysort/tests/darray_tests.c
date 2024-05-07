@@ -47,9 +47,7 @@ char *test_set()
 char *test_get()
 {
 	mu_assert(DArray_get(array, 0) == val1, "Wrong first value.");
-	PRINT_int(*(int *)(DArray_get(array, 0)));
 	mu_assert(DArray_get(array, 1) == val2, "Wrong second value.");
-	PRINT_int(*(int *)(DArray_get(array, 1)));
 	return NULL;
 }
 
@@ -72,25 +70,16 @@ char *test_remove()
 
 char *test_expand_contract()
 {
-	PRINT_int(array->max);
-	PRINT_int(array->size);
 	int old_max = array->max;
 	DArray_expand(array);
 	mu_assert((unsigned int)array->max == old_max + array->expand_rate,
 			  "Wrong size after expand.");
-	PRINT_int(array->max);
-	PRINT_int(array->size);
 	DArray_contract(array);
 	mu_assert((unsigned int)array->max == array->expand_rate,
 			  "Should stay at the expand_rate at least.");
-	PRINT_int(array->max);
-	PRINT_int(array->size);
 	DArray_contract_min(array);
 	mu_assert(array->max == array->size,
 			  "Should stay at the expand_rate at least.");
-	PRINT_int(array->max);
-	PRINT_int(array->size);
-
 	return NULL;
 }
 
@@ -103,8 +92,6 @@ char *test_push_pop()
 		*val = i * 333;
 		DArray_push(array, val);
 	}
-	PRINT_int(array->max);
-	PRINT_int(array->size);
 	mu_assert(array->max == 1202, "Wrong max size");
 
 	for (i = 999; i >= 0; i--)
@@ -114,8 +101,33 @@ char *test_push_pop()
 		mu_assert(*val == i * 333, "Wrong value");
 		DArray_free(val);
 	}
-	PRINT_int(array->max);
-	PRINT_int(array->size);
+
+	return NULL;
+}
+
+char *test_display()
+{
+	int i = 0;
+	for (i = 0; i < 10; i++)
+	{
+		int *val = DArray_new(array);
+		*val = rand() % 350;
+		DArray_push(array, val);
+	}
+	mu_assert(array->max = 300, "Wrong max size");
+
+	DArray_display(array, 'e', 'i');
+
+	DArray_clear(array);
+	mu_assert(!array->contents[array->size - 1], "Darray after clear_destroy must be NULL");
+
+	char *val = calloc(1, 1);
+	*val = 'a';
+	DArray_set(array, 0, val);
+	mu_assert(*(char *)(array->contents[0]) == 'a', "First element must be NULL");
+
+	DArray_remove_free(array, 0);
+	mu_assert(!array->contents[0], "First element must be NULL");
 
 	return NULL;
 }
@@ -131,6 +143,7 @@ char *all_tests()
 	mu_run_test(test_remove);
 	mu_run_test(test_expand_contract);
 	mu_run_test(test_push_pop);
+	mu_run_test(test_display);
 	mu_run_test(test_destroy);
 
 	return NULL;
