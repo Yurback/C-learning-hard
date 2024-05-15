@@ -1,0 +1,15 @@
+DEBUG tests/string_algos_tests.c:161: ------ RUNNING: ./tests/string_algos_tests
+DEBUG tests/string_algos_tests.c:149: 
+------- test_find_and_scan
+DEBUG tests/string_algos_tests.c:153: 
+------- test_scan_performance
+DEBUG tests/string_algos_tests.c:112: SCAN COUNT: 10502000, END TIME: 2, OPS: 5251000.000000
+DEBUG tests/string_algos_tests.c:154: 
+------- test_find_performance
+DEBUG tests/string_algos_tests.c:81: FIND COUNT: 1242000, END TIME: 2, OPS: 621000.000000
+DEBUG tests/string_algos_tests.c:155: 
+------- test_binstr_performance
+DEBUG tests/string_algos_tests.c:55: BINSTR COUNT: 2657000, END TIME: 2, OPS: 1328500.000000
+DEBUG tests/string_algos_tests.c:156: 
+------- test_strstr
+DEBUG tests/string_algos_tests.c:140: STRSTR COUNT: 380353000, END TIME: 2, OPS: 190176500.000000

@@ -1,0 +1,29 @@
+{
+  "files.associations": {
+    "random": "c",
+    "array": "c",
+    "string": "c",
+    "string_view": "c",
+    "hashmap_algos.h": "c",
+    "atomic": "c",
+    "*.tcc": "c",
+    "concepts": "c",
+    "cstddef": "c",
+    "cstdio": "c",
+    "cwchar": "c",
+    "deque": "c",
+    "vector": "c",
+    "functional": "c",
+    "memory": "c",
+    "memory_resource": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "initializer_list": "c",
+    "new": "c",
+    "stdexcept": "c",
+    "system_error": "c",
+    "typeinfo": "c",
+    "utility": "c",
+    "bit": "c"
+  }
+}

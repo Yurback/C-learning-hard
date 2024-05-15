@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "random": "c",
+    "array": "c",
+    "string": "c",
+    "string_view": "c",
+    "hashmap_algos.h": "c"
+  }
+}

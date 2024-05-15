@@ -1,0 +1,7 @@
+      scan               find             binstr            strstr         
+ Min.   :10726000   Min.   :1272000   Min.   :2517000   Min.   :384573000  
+ 1st Qu.:16614500   1st Qu.:1300250   1st Qu.:2686250   1st Qu.:387100750  
+ Median :16740000   Median :1308000   Median :2701000   Median :388237500  
+ Mean   :16187000   Mean   :1301800   Mean   :2675300   Mean   :387922300  
+ 3rd Qu.:16835000   3rd Qu.:1310500   3rd Qu.:2705000   3rd Qu.:389243500  
+ Max.   :17244000   Max.   :1312000   Max.   :2711000   Max.   :390239000  
