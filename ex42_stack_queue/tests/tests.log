@@ -13,8 +13,8 @@ DEBUG tests/stack_tests.c:56:
 ------- test_create
 DEBUG tests/stack_tests.c:57: 
 ------- test_push_pop
-DEBUG tests/stack_tests.c:38: VAL: test1 data
-DEBUG tests/stack_tests.c:38: VAL: test2 data
 DEBUG tests/stack_tests.c:38: VAL: test3 data
+DEBUG tests/stack_tests.c:38: VAL: test2 data
+DEBUG tests/stack_tests.c:38: VAL: test1 data
 DEBUG tests/stack_tests.c:58: 
 ------- test_destroy
