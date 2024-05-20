@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "type_traits": "c",
+        "list.h": "c",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "utility": "c"
+    }
+}
