@@ -6,6 +6,7 @@
 #include <time.h>
 
 BSTree *map = NULL;
+
 static int traverse_called = 0;
 struct tagbstring test1 = bsStatic("test data 1");
 struct tagbstring test2 = bsStatic("test data 2");
@@ -20,7 +21,6 @@ static int traverse_good_cd(BSTreeNode *node)
     traverse_called++;
     return 0;
 }
-
 static int traverse_fail_cb(BSTreeNode *node)
 {
     debug("KEY: %s", bdata((bstring)node->key));
