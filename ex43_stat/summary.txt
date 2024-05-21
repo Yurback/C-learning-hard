@@ -1,0 +1,38 @@
+[1] "s"
+ [1] 1.195402 6.000738 5.424882 2.813227 5.102216 1.037505 5.195159 9.094582
+ [9] 2.369712 3.834692
+[1] "summary(s)"
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.038   2.481   4.468   4.207   5.367   9.095 
+[1] "sd(s)"
+[1] 2.470702
+[1] "sum(s)"
+[1] 42.06811
+[1] "sum(s*s)"
+[1] 231.912
+[1] "sum(s) * mean(s)"
+[1] 176.9726
+[1] "sum(s*s) - sum(s) * mean(s)"
+[1] 54.93933
+[1] "(sum(s*s) - sum(s) * mean(s)) / (length(s) - 1)"
+[1] 6.10437
+[1] "sqrt((sum(s*s) - sum(s) * mean(s)) / (length(s) -1)"
+[1] 2.470702
+
+Lines 1-4 I use the function runif to get a random uniform distribution of numbers, then print them out. I’ll use these in the unit test later.
+
+Lines 5-7 Here’s the summary, so you can see the values that R calculates for these.
+
+Lines 8-9 This is the stddev using the sd function.
+
+Lines 10-11 Now I begin to build this calculation manually, first by getting the sum.
+
+Lines 12-13 The next piece of the stdev formula is the sumsq, which I can get with sum(s * s) that tells R to multiply the whole s list by itself, and then sum those. The power of R is being able to do math on entire data structures like this.
+
+Lines 14-15 Looking at the formula, I then need the sum multiplied by mean, so I do sum(s) * mean(s).
+
+Lines 16-17 I then combine the sumsq with this to get sum(s * s) - sum(s) * mean(s).
+
+Lines 18-19 That needs to be divided by $n-1$, so I do (sum(s * s) - sum(s) * mean(s)) / (length(s) - 1).
+
+Lines 20-21 Finally, I sqrt that and I get 3.547868, which matches the number R gave me for sd above.

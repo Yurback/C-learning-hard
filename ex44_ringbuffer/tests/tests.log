@@ -1,0 +1,10 @@
+DEBUG tests/ringbuffer_tests.c:91: ------ RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:84: 
+------- test_create
+DEBUG tests/ringbuffer_tests.c:85: 
+------- test_read_write
+DEBUG tests/ringbuffer_tests.c:26: data is: 0, spase is: 12
+DEBUG tests/ringbuffer_tests.c:43: buffer Zed size 4
+[ERROR] (src/ringbuf/ringbuffer.c:36: errno: None) Not enough space: 10 request, 4 available
+DEBUG tests/ringbuffer_tests.c:86: 
+------- test_destroy
