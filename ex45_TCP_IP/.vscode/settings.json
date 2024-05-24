@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "ringbuffer.h": "c",
+        "string_view": "c",
+        "array": "c",
+        "deque": "c",
+        "string": "c",
+        "unordered_map": "c",
+        "vector": "c",
+        "initializer_list": "c"
+    }
+}
