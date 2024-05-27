@@ -1,0 +1,31 @@
+DEBUG tests/bstree_tests.c:167: ------ RUNNING: ./tests/bstree_tests
+DEBUG tests/bstree_tests.c:157: 
+------- test_create
+DEBUG tests/bstree_tests.c:158: 
+------- test_get_set
+DEBUG tests/bstree_tests.c:159: 
+------- test_traverse
+DEBUG tests/bstree_tests.c:20: KEY: test data 3
+DEBUG tests/bstree_tests.c:20: KEY: test data 2
+DEBUG tests/bstree_tests.c:20: KEY: test data 1
+DEBUG tests/bstree_tests.c:26: KEY: test data 3
+DEBUG tests/bstree_tests.c:26: KEY: test data 2
+DEBUG tests/bstree_tests.c:160: 
+------- test_delete
+DEBUG tests/bstree_tests.c:161: 
+------- test_destroy
+DEBUG tests/bstree_tests.c:162: 
+------- test_fuzzing
+DEBUG tests/tstree_tests.c:118: ------ RUNNING: ./tests/tstree_tests
+DEBUG tests/tstree_tests.c:109: 
+------- test_insert
+DEBUG tests/tstree_tests.c:110: 
+------- test_search_exact
+DEBUG tests/tstree_tests.c:111: 
+------- test_search_prefix
+DEBUG tests/tstree_tests.c:64: result 0x5963ab9ea1b8, expected: 0x5963ab9ea1b8
+DEBUG tests/tstree_tests.c:112: 
+------- test_traverse
+DEBUG tests/tstree_tests.c:92: traverse count is: 5
+DEBUG tests/tstree_tests.c:113: 
+------- test_destroy
