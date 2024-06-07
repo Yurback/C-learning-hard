@@ -1,6 +1,7 @@
-CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
+CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic $(OPTFLAGS)
 LIBS=-ldl $(OPTLIBS)
 PREFIX?=/usr/local
+CC=gcc
 
 SOURCES=$(wildcard src/**/*.c src/*.c)
 OBJECTS=$(patsubst %.c,%.o,$(SOURCES))
@@ -8,11 +9,14 @@ OBJECTS=$(patsubst %.c,%.o,$(SOURCES))
 TEST_SRC=$(wildcard tests/*_tests.c)
 TESTS=$(patsubst %.c,%,$(TEST_SRC))
 
-TARGET=build/libYOUR_LIBRARY.a
+PROGRAMS_SRC=$(wildcard bin/*.c)
+PROGRAMS=$(patsubst %.c,%,$(PROGRAMS_SRC))
+
+TARGET=build/liblcthw.a
 SO_TARGET=$(patsubst %.a,%.so,$(TARGET))
 
 # The Target Build
-all: $(TARGET) $(SO_TARGET) tests
+all: $(TARGET) $(SO_TARGET) tests $(PROGRAMS)
 
 dev: CFLAGS=-g -Wall -Isrc -Wall -Wextra $(OPTFLAGS)
 dev: all
@@ -31,13 +35,23 @@ build:
 
 # The Unit Tests
 .PHONY: tests
-tests: CFLAGS += $(TARGET)
 tests: $(TESTS)
+tests: 
 	sh ./tests/runtests.sh
 
+$(TESTS): 
+	$(CC) $(CFLAGS) $(patsubst %,%.c,$@) $(TARGET) -o $@;
+
+
+#	for i in $^; do \
+#	$(CC) $(CFLAGS) $$i $(TARGET) -o $@; \
+#	sh ./tests/runtests.sh; \
+#	done
+$(PROGRAMS): 
+	$(CC) $(CFLAGS) $(patsubst %,%.c,$@) $(TARGET) -o $@;
 # The Cleaner
 clean:
-	rm -rf build $(OBJECTS) $(TESTS)
+	rm -rf build $(OBJECTS) $(TESTS) $(PROGRAMS)
 	rm -f tests/tests.log 
 	find . -name "*.gc*" -exec rm {} \;
 	rm -rf `find . -name "*.dSYM" -print`
@@ -52,6 +66,4 @@ check:
 	@echo Files with potentially dangerous functions.
 	@egrep '[^_.>a-zA-Z0-9](str(n?cpy|n?cat|xfrm|n?dup|str|pbrk|tok|_)\
 		|stpn?cpy|a?sn?printf|byte_)' $(SOURCES) || true
-		
-#-rdynamic 
 

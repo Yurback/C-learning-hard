@@ -1,0 +1,22 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "dbg.h": "c",
+        "signal.h": "c",
+        "bstrlib.h": "c",
+        "ringbuffer.h": "c",
+        "array": "c",
+        "deque": "c",
+        "forward_list": "c",
+        "list": "c",
+        "string": "c",
+        "unordered_map": "c",
+        "vector": "c",
+        "internet": "c",
+        "io_context": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "net.h": "c",
+        "unistd.h": "c"
+    }
+}

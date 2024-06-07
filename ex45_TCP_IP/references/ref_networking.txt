@@ -1,0 +1,7 @@
+1. Beej's Guide to Unix Interprocess Communication
+
+2. Effective TCP/IP Programming: 44 Tips to Improve Your Network Programs: 44 Tips to Improve
+Your Network Programs
+
+3. Unix Network Programming, Volume 1
+The Sockets Networking API (3rd Edition)

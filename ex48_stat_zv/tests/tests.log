@@ -1,0 +1,3 @@
+DEBUG tests/statserve_tests.c:20: ------ RUNNING: ./tests/statserve_tests
+DEBUG tests/statserve_tests.c:15: 
+------- test_dummy
