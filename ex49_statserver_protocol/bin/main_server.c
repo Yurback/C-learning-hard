@@ -110,11 +110,8 @@ int main(void)
     int socket_desc = 0,
         sock = 0, clientLen = 0, n = 0;
     struct sockaddr_in client;
-    // char client_message[4096] = {0};
-    // char message[4096] = {0};
-
-    RingBuffer *buf = NULL;
-    buf = RingBuffer_create(1024 * 4);
+    char client_message[4096] = {0};
+    char message[4096] = {0};
 
     // Create socker
     socket_desc = socketCreate();
@@ -155,37 +152,24 @@ int main(void)
         }
 
         printf("Connection accepted\n");
-        // memset(client_message, '\0', sizeof(client_message));
+        memset(client_message, '\0', sizeof(client_message));
 
-        while (n = recv(sock, RingBuffer_starts_at(buf), RingBuffer_available_space(buf), 0) > 0 && strstr(buf->buffer, "\n\n") == 0 && strstr(buf->buffer, "\r\n\r\n") == 0)
+        while ((n = read(sock, client_message, 4096)) > 0)
         {
-            // for (int i = 0; i < 10; i++)
-            // {
-            //     fprintf(stdout, "%d\n", (unsigned char)buf->buffer[i]);
-            // }
-            fprintf(stdout, "%d : %d\n", n, strlen(buf->buffer));
-            fprintf(stdout, "%s", RingBuffer_starts_at(buf));
-            RingBuffer_commit_write(buf, strlen(buf->buffer) - (buf->start));
-            RingBuffer_commit_read(buf, strlen(buf->buffer) - (buf->start));
-            fprintf(stdout, "%s", buf->buffer);
-            // if (client_message[n - 1] == '\n')
-            // {
-            //     break;
-            // }
-            // memset(client_message, 0, 4096);
+            fprintf(stdout, "\n%s\n", client_message);
+            if (client_message[n - 1] == '\n')
+            {
+                break;
+            }
+            memset(client_message, 0, 4096);
         }
         if (n < 0)
             printf("ERROR occured");
 
-        RingBuffer_commit_read(buf, RingBuffer_available_data(buf));
-        RingBuffer_write(buf, "HTTP/1.0 200 OK\r\n\r\nHello", strlen("HTTP/1.0 200 OK\r\n\r\nHello"));
         // now send a response.
-        // snprintf((char *)message, sizeof(message), "HTTP/1.0 200 OK\r\n\r\nHello");
+        snprintf((char *)message, sizeof(message), "HTTP/1.0 200 OK\r\n\r\nHello");
 
-        write(sock, RingBuffer_starts_at(buf), RingBuffer_available_data(buf));
-        memset(buf->buffer, 0, 4096);
-        buf->start = 0;
-        buf->end = 0;
+        write(sock, (char *)message, strlen((char *)message));
         close(sock);
     }
 }

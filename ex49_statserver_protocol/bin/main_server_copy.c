@@ -157,12 +157,12 @@ int main(void)
         printf("Connection accepted\n");
         // memset(client_message, '\0', sizeof(client_message));
 
-        while (n = recv(sock, RingBuffer_starts_at(buf), RingBuffer_available_space(buf), 0) > 0 && strstr(buf->buffer, "\n\n") == 0 && strstr(buf->buffer, "\r\n\r\n") == 0)
+        while (n = recv(sock, RingBuffer_starts_at(buf), RingBuffer_available_space(buf), 0) > 0 && ((strstr(buf->buffer, "\r\n\r\n") == 0) && (strstr(buf->buffer, "\n\n") == 0)))
         {
-            // for (int i = 0; i < 10; i++)
-            // {
-            //     fprintf(stdout, "%d\n", (unsigned char)buf->buffer[i]);
-            // }
+            for (int i = 0; i < 10; i++)
+            {
+                fprintf(stdout, "%d\n", (unsigned char)buf->buffer[i]);
+            }
             fprintf(stdout, "%d : %d\n", n, strlen(buf->buffer));
             fprintf(stdout, "%s", RingBuffer_starts_at(buf));
             RingBuffer_commit_write(buf, strlen(buf->buffer) - (buf->start));

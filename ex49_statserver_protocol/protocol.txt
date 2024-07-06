@@ -1,0 +1,6 @@
+1/ Take message (maybe need name protocol)
+2/ Respond - "USAGE: x y z
+    x - create | add | mean | sqdev | print
+    y - data (30.00)
+3/ Take and split message (HEAD _ PAYLOAD)
+4/ action

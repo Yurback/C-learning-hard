@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "bstrlib.h": "c",
+        "dbg.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "buffer": "c",
+        "netdb.h": "c",
+        "unistd.h": "c",
+        "system_error": "c"
+    }
+}
